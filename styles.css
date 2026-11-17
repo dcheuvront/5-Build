@@ -67,7 +67,8 @@ main {
 .card-row {
     border: 1px solid #334155;
     padding: 1rem;
-    justify-content: space-evenly;
+    display: flex;
+    gap: 1rem;
 }
 
 img {
@@ -114,13 +115,13 @@ footer {
     header, nav, footer {
         grid-column: 1/-1;
     }
-    nav {
+    nav ul{
         display:flex;
         justify-content:space-around;
     }
     .card-row {
         display:flex;
-        gap: 1rem;
+        justify-content:space-evenly;
     }
     .card-row section {
         width:30%;
